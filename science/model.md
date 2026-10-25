@@ -12,54 +12,54 @@ The [channel criterion](channel-criterion.md) is inherited from the sensitivity 
 
 Let $`G=(V,E)`$ be a fixed finite, connected, simple graph with $`n=|V|\geq2`$ qubits and Hilbert space $`\mathcal H_V=(\mathbb C^2)^{\otimes n}`$. Consider the full real coefficient family
 
-$$
+```math
 H(h,J)=
 \sum_{i\in V}\sum_{a=x,y,z} h_i^a\,\sigma_i^a
 +
 \sum_{\{i,j\}\in E}\sum_{a,b=x,y,z}
 J_{ij}^{ab}\,\sigma_i^a\sigma_j^b .
-$$
+```
 
 An additive scalar has been omitted because it changes neither the Gibbs state nor commutators. The coefficient space is $`\mathbb R^{3n+9|E|}`$. No translation invariance, disorder distribution, spectral nondegeneracy, integrability, or mixing hypothesis is imposed.
 
-For finite inverse temperature $`0<\beta<\infty`$, define
+For finite inverse temperature $`0\lt \beta\lt \infty`$, define
 
-$$
-\rho_\beta(H)=\frac{e^{-\beta H}}{\operatorname{Tr}(e^{-\beta H})}.
-$$
+```math
+\rho_\beta(H)=\frac{e^{-\beta H}}{\mathrm{Tr}(e^{-\beta H})}.
+```
 
 This state is faithful: all its eigenvalues are positive. The algebraic statements also hold at finite negative $`\beta`$, but ordinary positive-temperature equilibrium is the physical setting used here. Infinite temperature, $`\beta=0`$, and the zero-temperature limit are separate cases.
 
 ## Supported operators, channels, and generators
 
-An observable supported on $`A\subseteq V`$ has the form $`Q_A\otimes I_{A^c}`$. A channel supported on $`A`$ has the form $`\mathcal E_A\otimes\operatorname{id}_{A^c}`$, where $`\mathcal E_A`$ is completely positive and trace preserving (CPTP). The support can be disconnected and can contain $`n-1`$ sites.
+An observable supported on $`A\subseteq V`$ has the form $`Q_A\otimes I_{A^c}`$. A channel supported on $`A`$ has the form $`\mathcal E_A\otimes\mathrm{id}_{A^c}`$, where $`\mathcal E_A`$ is completely positive and trace preserving (CPTP). The support can be disconnected and can contain $`n-1`$ sites.
 
 Exact Gibbs preservation means
 
-$$
-(\mathcal E_A\otimes\operatorname{id}_{A^c})(\rho_\beta)=\rho_\beta.
-$$
+```math
+(\mathcal E_A\otimes\mathrm{id}_{A^c})(\rho_\beta)=\rho_\beta.
+```
 
 This is equality of the global state. Equality only of the marginal on $`A`$ does not satisfy the condition.
 
-A local Lindblad generator is $`\mathcal L_A=\ell_A\otimes\operatorname{id}_{A^c}`$, with
+A local Lindblad generator is $`\mathcal L_A=\ell_A\otimes\mathrm{id}_{A^c}`$, with
 
-$$
+```math
 \ell_A(X)=-i[K_A,X]
 +\sum_\mu\left(
 V_\mu X V_\mu^\dagger
 -\frac12\{V_\mu^\dagger V_\mu,X\}
 \right).
-$$
+```
 
 Thus $`e^{t\ell_A}`$ is CPTP for every $`t\geq0`$. Each term in a frustration-free decomposition is required to be a generator of this form, and the Gibbs state must be individually stationary under it:
 
-$$
+```math
 \mathcal L=\sum_\alpha\mathcal L_{A_\alpha},
 \qquad
 \mathcal L_{A_\alpha}(\rho_\beta)=0
 \quad\text{for every }\alpha.
-$$
+```
 
 The individual physicality and stationarity requirements are part of the model. A decomposition of a globally physical generator into arbitrary linear superoperators does not satisfy this definition automatically.
 
@@ -67,11 +67,11 @@ The individual physicality and stationarity requirements are part of the model. 
 
 **Generic Gibbs rigidity.** For every graph above, there is a nonzero real polynomial $`F_G(h,J)`$ such that, whenever $`F_G(h,J)\neq0`$,
 
-$$
-(\mathcal E_A\otimes\operatorname{id}_{A^c})(\rho_\beta)=\rho_\beta
+```math
+(\mathcal E_A\otimes\mathrm{id}_{A^c})(\rho_\beta)=\rho_\beta
 \quad\Longrightarrow\quad
-\mathcal E_A=\operatorname{id}_A
-$$
+\mathcal E_A=\mathrm{id}_A
+```
 
 for **every** nonempty proper subset $`A\subsetneq V`$, **every** CPTP map $`\mathcal E_A`$, and **every** finite $`\beta\neq0`$, for the same Hamiltonian.
 

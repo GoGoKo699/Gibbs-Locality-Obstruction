@@ -6,22 +6,22 @@ This page derives the dynamical consequences of the [generic graph theorem](hami
 
 Let $`H`$ have scalar local commutant on every proper subset, and fix a finite $`\beta\neq0`$. Suppose a proper-support GKSL generator satisfies
 
-$$
+```math
 \mathcal L_A(\rho_\beta)=0.
-$$
+```
 
 Its semigroup obeys
 
-$$
+```math
 e^{t\mathcal L_A}(\rho_\beta)=\rho_\beta
 \qquad\text{for every }t\geq0.
-$$
+```
 
 Every $`e^{t\mathcal L_A}`$ is a CPTP channel supported on $`A`$. The channel theorem therefore makes every such map the identity. Differentiating at $`t=0`$ gives
 
-$$
+```math
 \mathcal L_A=0.
-$$
+```
 
 This uses preservation at all semigroup times. Identity of a channel at one isolated time alone would not force its generator to vanish.
 
@@ -35,31 +35,31 @@ An operation implemented with independent ancillas, measurement, internal classi
 
 For any faithful target state $`\rho_\beta`$, the global replacement channel
 
-$$
-\mathcal T_\beta(X)=\operatorname{Tr}(X)\rho_\beta
-$$
+```math
+\mathcal T_\beta(X)=\mathrm{Tr}(X)\rho_\beta
+```
 
 is CPTP and fixes the target. If
 $`\rho_\beta=\sum_i p_i|i\rangle\langle i|`$, a Kraus representation is
 
-$$
+```math
 K_{ij}=\sqrt{p_i}\,|i\rangle\langle j|,
 \qquad
 \sum_{i,j}K_{ij}^\dagger K_{ij}=I.
-$$
+```
 
 Since $`\mathcal T_\beta^2=\mathcal T_\beta`$, the generator
 
-$$
-\mathcal L_{\mathrm{reset}}=\mathcal T_\beta-\operatorname{id}
-$$
+```math
+\mathcal L_{\mathrm{reset}}=\mathcal T_\beta-\mathrm{id}
+```
 
 has the CPTP semigroup
 
-$$
+```math
 e^{t\mathcal L_{\mathrm{reset}}}
-=e^{-t}\operatorname{id}+(1-e^{-t})\mathcal T_\beta.
-$$
+=e^{-t}\mathrm{id}+(1-e^{-t})\mathcal T_\beta.
+```
 
 Its unique stationary density matrix is $`\rho_\beta`$. The same Kraus operators give its GKSL form directly, because their squared sum is the identity.
 
@@ -71,16 +71,16 @@ This construction is an existence witness for the spatial statement. Implementin
 
 For a local Hamiltonian $`H=\sum_X h_X`$, consider
 
-$$
+```math
 \mathcal L_X=-i[h_X,\,\cdot\,].
-$$
+```
 
 Each term is a local physical Hamiltonian generator. Their sum preserves the Gibbs state:
 
-$$
+```math
 \sum_X\mathcal L_X(\rho_\beta)
 =-i[H,\rho_\beta]=0.
-$$
+```
 
 For a generic interacting Hamiltonian, the individual terms do not preserve it. Their nonzero disturbances cancel. This example has no relaxation to a unique equilibrium, but it shows why global stationarity cannot be substituted for termwise stationarity in the proof.
 
@@ -90,7 +90,7 @@ Likewise, the present theorem does not decide whether a genuinely dissipative lo
 
 A term can be centered near one vertex and have small operator tails reaching distant vertices while still having full support. The theorem allows that behavior. The exact Gibbs constructions discussed in [Related work](../references/related-work.md) use quasi-local physical generators, and their nonzero tails are compatible with the full-support necessity.
 
-Strict support of a system channel is also different from locality of its microscopic coupling to a bath. Evolution under an interacting system Hamiltonian can spread the action of a locally coupled bath. The resulting system channel need not be of the form $`\mathcal E_A\otimes\operatorname{id}_{A^c}`$.
+Strict support of a system channel is also different from locality of its microscopic coupling to a bath. Evolution under an interacting system Hamiltonian can spread the action of a locally coupled bath. The resulting system channel need not be of the form $`\mathcal E_A\otimes\mathrm{id}_{A^c}`$.
 
 Similarly, a circuit of local gates can implement a global channel. Requiring every gate to preserve the target separately is an additional condition, absent from a general preparation circuit.
 
@@ -98,19 +98,19 @@ Similarly, a circuit of local gates can implement a global channel. Requiring ev
 
 There is no temperature-independent disturbance floor in the theorem. Let $`\mathcal D_A`$ be a nonidentity unital local channel, for example dephasing one spin, and write $`D=2^n`$. At infinite temperature,
 
-$$
-(\mathcal D_A\otimes\operatorname{id})(I/D)=I/D.
-$$
+```math
+(\mathcal D_A\otimes\mathrm{id})(I/D)=I/D.
+```
 
 For finite $`\beta`$, trace-norm contraction on Hermitian operators and the triangle inequality give
 
-$$
+```math
 \begin{aligned}
-\|(\mathcal D_A\otimes\operatorname{id})(\rho_\beta)-\rho_\beta\|_1
+\|(\mathcal D_A\otimes\mathrm{id})(\rho_\beta)-\rho_\beta\|_1
 &\leq
 2\|\rho_\beta-I/D\|_1 .
 \end{aligned}
-$$
+```
 
 For any fixed finite Hamiltonian, the right-hand side tends to zero as $`\beta\to0`$, even though the left-hand side is strictly positive at every nonzero $`\beta`$ when the rigidity theorem applies. Analyticity of the finite-dimensional Gibbs state makes this bound $`O(|\beta|)`$ for a fixed $`H`$; no size-uniform constant is asserted.
 
