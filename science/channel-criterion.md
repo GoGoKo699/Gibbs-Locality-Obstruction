@@ -14,13 +14,13 @@ $$
 \mathcal H=\mathcal H_A\otimes\mathcal H_B,
 $$
 
-and let $\rho_{AB}>0$ be a density operator. The inequality means that the state is positive definite, also called faithful. Its reduced state $\rho_A=\operatorname{Tr}_B\rho_{AB}$ is then positive definite as well.
+and let $\rho_{AB}>0$ be a density operator. The inequality means that the state is positive definite, also called faithful. Its reduced state $\rho_A=\mathrm{Tr}_B\rho_{AB}$ is then positive definite as well.
 
-A local channel is a completely positive, trace-preserving linear map $\mathcal E_A$ from operators on $\mathcal H_A$ to operators on the same space. Its action on the joint state is $\mathcal E_A\otimes\operatorname{id}_B$. The local-preservation condition is
+A local channel is a completely positive, trace-preserving linear map $\mathcal E_A$ from operators on $\mathcal H_A$ to operators on the same space. Its action on the joint state is $\mathcal E_A\otimes\mathrm{id}_B$. The local-preservation condition is
 
 $$
-(\mathcal E_A\otimes\operatorname{id}_B)(\rho_{AB})=\rho_{AB}.
-\tag{1}
+(\mathcal E_A\otimes\mathrm{id}_B)(\rho_{AB})=\rho_{AB}.
+\qquad\text{(1)}
 $$
 
 Preserving only the marginal $\rho_A$ is a weaker condition. Equation (1) also preserves every correlation between $A$ and $B$.
@@ -28,10 +28,10 @@ Preserving only the marginal $\rho_A$ is a weaker condition. Equation (1) also p
 We say that $\rho_{AB}$ is **locally rigid on $A$** if
 
 $$
-(\mathcal E_A\otimes\operatorname{id}_B)(\rho_{AB})=\rho_{AB}
+(\mathcal E_A\otimes\mathrm{id}_B)(\rho_{AB})=\rho_{AB}
 \quad\Longrightarrow\quad
-\mathcal E_A=\operatorname{id}_A
-\tag{2}
+\mathcal E_A=\mathrm{id}_A
+\qquad\text{(2)}
 $$
 
 for every local channel. This is the channel-sensitivity property studied by Lie and Ng. The word “rigid” here specifies the exact condition (2); it does not assert a quantitative lower bound on the disturbance caused by an approximately preserving operation.
@@ -42,7 +42,7 @@ $$
 \mathfrak C_A(\rho)
 =\left\{Q_A\in\mathcal B(\mathcal H_A):
 [Q_A\otimes I_B,\rho_{AB}]=0\right\}.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 It is a unital algebra closed under adjoints. If it contains a nonscalar operator, it also contains a nonscalar Hermitian operator: take the Hermitian and anti-Hermitian parts and note that they cannot both be scalar unless the original operator is scalar.
@@ -57,7 +57,7 @@ It is a unital algebra closed under adjoints. If it contains a nonscalar operato
 
 $$
 \mathfrak C_A(\rho)=\mathbb C I_A.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 A projective pinching channel has the form
@@ -68,7 +68,7 @@ $$
 P_jP_k=\delta_{jk}P_j,
 \qquad
 \sum_jP_j=I_A.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 The projectors may have arbitrary ranks. A pinching is nontrivial when there are at least two nonzero projectors. This distinction matters: sensitivity to rank-one measurements alone would not state the full criterion.
@@ -82,17 +82,17 @@ Suppose a channel $\mathcal E_A$ has a faithful fixed state. The standard struct
 $$
 \mathcal H_A
 =\bigoplus_j\left(\mathcal H_{L_j}\otimes\mathcal H_{R_j}\right)
-\tag{6}
+\qquad\text{(6)}
 $$
 
 in which
 
 $$
-\operatorname{Fix}(\mathcal E_A)
+\mathrm{Fix}(\mathcal E_A)
 =\bigoplus_j\left[
 \mathcal B(\mathcal H_{L_j})\otimes\tau_{R_j}
 \right].
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Each $\tau_{R_j}>0$ is a fixed density operator. The same $\tau_{R_j}$ occurs for every operator in the corresponding block of the fixed space. The faithful fixed state excludes a transient subspace outside these blocks.
@@ -105,7 +105,7 @@ First suppose that a nonscalar Hermitian $Q_A$ belongs to $\mathfrak C_A(\rho)$.
 
 $$
 Q_A=\sum_jq_jP_j,
-\tag{8}
+\qquad\text{(8)}
 $$
 
 where the $q_j$ are distinct. Commutation with $Q_A\otimes I_B$ implies commutation with every spectral projector $P_j\otimes I_B$. Consequently,
@@ -113,7 +113,7 @@ where the $q_j$ are distinct. Commutation with $Q_A\otimes I_B$ implies commutat
 $$
 \rho_{AB}
 =\sum_j(P_j\otimes I_B)\rho_{AB}(P_j\otimes I_B).
-\tag{9}
+\qquad\text{(9)}
 $$
 
 There are at least two nonzero projectors, so (9) gives a nonidentity local preserving channel. Thus local rigidity implies a scalar local commutant.
@@ -124,7 +124,7 @@ Expand $\rho_{AB}$ in any operator basis on $B$:
 
 $$
 \rho_{AB}=\sum_\mu X_\mu\otimes F_\mu.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 Linear independence of the $F_\mu$ and (1) imply $\mathcal E_A(X_\mu)=X_\mu$ for every $\mu$. Every coefficient therefore lies in (7), and the joint state has the form
@@ -134,7 +134,7 @@ $$
 =\bigoplus_j\left(
 \omega_{L_jB}\otimes\tau_{R_j}
 \right),
-\tag{11}
+\qquad\text{(11)}
 $$
 
 with the tensor factors ordered in the indicated block. The positive operators $\omega_{L_jB}$ may be unnormalized; their traces contain the block probabilities.
@@ -153,10 +153,10 @@ $$
 \rho_\beta(H)
 =\frac{e^{-\beta H}}{Z_\beta(H)},
 \qquad
-Z_\beta(H)=\operatorname{Tr}e^{-\beta H},
+Z_\beta(H)=\mathrm{Tr}e^{-\beta H},
 \qquad
 0<|\beta|<\infty.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Positive inverse temperatures are the main application. The finite-dimensional statements also hold for negative inverse temperatures. The state in (12) is faithful, whether or not the Hamiltonian has degenerate eigenvalues.
@@ -167,7 +167,7 @@ $$
 \mathfrak C_A(H)
 =\left\{Q_A\in\mathcal B(\mathcal H_A):
 [Q_A\otimes I_B,H]=0\right\}.
-\tag{13}
+\qquad\text{(13)}
 $$
 
 **Corollary 2 — Exact Gibbs criterion.** At every finite $\beta\neq0$,
@@ -176,7 +176,7 @@ $$
 \rho_\beta(H)\text{ is locally rigid on }A
 \quad\Longleftrightarrow\quad
 \mathfrak C_A(H)=\mathbb C I_A.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 **Proof.** Commutation with $H$ implies commutation with every function of $H$, including $\rho_\beta(H)$. In the other direction, faithfulness permits the matrix logarithm, and
@@ -184,7 +184,7 @@ $$
 $$
 \log\rho_\beta(H)
 =-\beta H-\log Z_\beta(H)\,I.
-\tag{15}
+\qquad\text{(15)}
 $$
 
 An operator commuting with $\rho_\beta(H)$ also commutes with its logarithm. Since $\beta\neq0$, (15) gives commutation with $H$. Thus
@@ -192,7 +192,7 @@ An operator commuting with $\rho_\beta(H)$ also commutes with its logarithm. Sin
 $$
 \mathfrak C_A\bigl(\rho_\beta(H)\bigr)
 =\mathfrak C_A(H),
-\tag{16}
+\qquad\text{(16)}
 $$
 
 and Theorem 1 proves (14). $\square$

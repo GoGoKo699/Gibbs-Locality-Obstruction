@@ -9,8 +9,8 @@ The contribution developed here is a statement about the restricted family of **
 The channel-theoretic ingredient is established prior work. [Lie and Ng, Theorem 3](https://arxiv.org/html/2303.02376v1), prove that a bipartite state admits a nonidentity preserving channel on one subsystem if and only if it admits a nontrivial preserving projective pinching there. In commutant language, for the faithful states needed here,
 
 $$
-\exists\,\mathcal E_A\ne\operatorname{id}_A:
-(\mathcal E_A\otimes\operatorname{id}_{A^c})(\rho)=\rho
+\exists\,\mathcal E_A\ne\mathrm{id}_A:
+(\mathcal E_A\otimes\mathrm{id}_{A^c})(\rho)=\rho
 \quad\Longleftrightarrow\quad
 \exists\,Q_A=Q_A^\dagger\notin\mathbb RI_A:
 [Q_A\otimes I_{A^c},\rho]=0.
@@ -47,7 +47,7 @@ The present result has an explicit physical-summand hypothesis. If
 $$
 \mathcal L=\sum_X\mathcal L_X,
 \qquad
-\mathcal L_X=\mathcal L_{A_X}\otimes\operatorname{id}_{A_X^c},
+\mathcal L_X=\mathcal L_{A_X}\otimes\mathrm{id}_{A_X^c},
 \qquad
 \mathcal L_X(\rho_\beta)=0,
 $$

@@ -12,14 +12,14 @@ Let $G=(V,E)$ be a finite connected simple undirected graph, with $n=|V|\geq2$. 
 
 $$
 \mathcal H_V=\bigotimes_{i\in V}\mathbb C^2.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Choose an ordering of the vertices. Write $\sigma^1=X$, $\sigma^2=Y$, and $\sigma^3=Z$. The real parameter space is
 
 $$
 \Theta_G=\mathbb R^{3n+9|E|},
-\tag{2}
+\qquad\text{(2)}
 $$
 
 with Hamiltonians
@@ -29,7 +29,7 @@ H(\theta)
 =\sum_{i\in V}\sum_{a=1}^3 h_{i,a}\sigma_i^a
 +\sum_{\substack{\{i,j\}\in E\\i<j}}
 \sum_{a,b=1}^3J_{ij}^{ab}\sigma_i^a\sigma_j^b.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 The displayed Pauli strings form a linearly independent basis of the allowed interaction space. A scalar multiple of the identity is omitted because it affects neither Gibbs states nor commutants. The graph specifies which edge terms are allowed; individual coefficients in (3) may vanish.
@@ -40,7 +40,7 @@ $$
 \mathfrak C_A(H)
 =\left\{Q_A\in\mathcal B(\mathcal H_A):
 [Q_A\otimes I_{A^c},H]=0\right\}.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The subset $A$ need not be connected. The statement below therefore covers every channel with proper tensor support, including channels acting on most of the system or on disconnected groups of sites.
@@ -51,18 +51,18 @@ $$
 \mathfrak C_A\bigl(H(\theta)\bigr)=\mathbb C I_A
 \qquad
 \text{for every }\varnothing\neq A\subsetneq V.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Consequently, for that same Hamiltonian, every finite $\beta\neq0$ and every proper nonempty $A$ obey
 
 $$
-(\mathcal E_A\otimes\operatorname{id}_{A^c})
+(\mathcal E_A\otimes\mathrm{id}_{A^c})
 \bigl(\rho_\beta(H(\theta))\bigr)
 =\rho_\beta(H(\theta))
 \quad\Longrightarrow\quad
-\mathcal E_A=\operatorname{id}_A.
-\tag{6}
+\mathcal E_A=\mathrm{id}_A.
+\qquad\text{(6)}
 $$
 
 The set of parameters satisfying (5) is open, dense, and of full Lebesgue measure. The exceptional set is a proper algebraic subset of $\Theta_G$.
@@ -78,7 +78,7 @@ w_e\neq0,
 \qquad
 w_e^2\neq w_f^2
 \quad\text{whenever distinct edges }e,f\text{ meet at a vertex}.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Consider
@@ -87,7 +87,7 @@ $$
 H_*
 =\sum_{\{i,j\}\in E}w_{ij}
 \left(X_iX_j+Z_iZ_j\right).
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Condition (7) can be met with uniformly bounded rational couplings. For example, enumerate the $m=|E|$ edges and take
@@ -95,7 +95,7 @@ Condition (7) can be met with uniformly bounded rational couplings. For example,
 $$
 w_{e_k}=1+\frac{k}{m+1},
 \qquad k=1,\ldots,m.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 Every weight then lies strictly between $1$ and $2$, and all squared weights are distinct. The construction uses only two-body edge interactions from (3); it requires no additional sites or interactions beyond the specified graph.
@@ -106,7 +106,7 @@ $$
 \mathfrak C_A(H_*)=\mathbb C I_A
 \qquad
 \text{for every }\varnothing\neq A\subsetneq V.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 The mechanism is propagation of operator constraints from the boundary of $A$ into its interior. Two independent Pauli couplings allow boundary constraints to resolve individual sites, even when one exterior vertex has several neighbors inside $A$.
@@ -117,7 +117,7 @@ Fix a nonempty proper $A$ and put $B=A^c$. Suppose
 
 $$
 [Q_A\otimes I_B,H_*]=0.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 For an exterior vertex $b\in B$, let $N_A(b)=N(b)\cap A$ and define operators on $A$ by
@@ -126,7 +126,7 @@ $$
 S_x^{(b)}=\sum_{i\in N_A(b)}w_{ib}X_i,
 \qquad
 S_z^{(b)}=\sum_{i\in N_A(b)}w_{ib}Z_i.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 The crossing interactions of $H_*$ are exactly
@@ -135,14 +135,14 @@ $$
 \sum_{b\in B}\left(
 S_x^{(b)}\otimes X_b+S_z^{(b)}\otimes Z_b
 \right),
-\tag{13}
+\qquad\text{(13)}
 $$
 
 with identities on the remaining exterior sites. Terms supported entirely in $B$ commute with $Q_A\otimes I_B$ and make no contribution to (11). Terms supported entirely in $A$ have the exterior factor $I_B$. The operators
 
 $$
 I_B,\quad X_b,\quad Z_b\quad(b\in B)
-\tag{14}
+\qquad\text{(14)}
 $$
 
 are linearly independent. Comparing their coefficients in (11) gives
@@ -150,18 +150,18 @@ are linearly independent. Comparing their coefficients in (11) gives
 $$
 [Q_A,S_x^{(b)}]=[Q_A,S_z^{(b)}]=0
 \qquad(b\in B).
-\tag{15}
+\qquad\text{(15)}
 $$
 
 This comparison does not require $A$ or $B$ to be connected.
 
-Now fix an exterior vertex with $d=|N_A(b)|>0$, abbreviate $S_x=S_x^{(b)}$, $S_z=S_z^{(b)}$, and write its crossing weights as $w_1,\ldots,w_d$. With $\operatorname{ad}_S(T)=[S,T]$, the Pauli relations and commutativity of operators on distinct sites imply
+Now fix an exterior vertex with $d=|N_A(b)|>0$, abbreviate $S_x=S_x^{(b)}$, $S_z=S_z^{(b)}$, and write its crossing weights as $w_1,\ldots,w_d$. With $\mathrm{ad}_S(T)=[S,T]$, the Pauli relations and commutativity of operators on distinct sites imply
 
 $$
-\operatorname{ad}_{S_z}^{2k}(S_x)
+\mathrm{ad}_{S_z}^{2k}(S_x)
 =4^k\sum_{i=1}^{d}w_i^{2k+1}X_i,
 \qquad k\geq0.
-\tag{16}
+\qquad\text{(16)}
 $$
 
 For completeness, one double commutator gives
@@ -169,7 +169,7 @@ For completeness, one double commutator gives
 $$
 [S_z,[S_z,S_x]]
 =4\sum_{i=1}^dw_i^3X_i,
-\tag{17}
+\qquad\text{(17)}
 $$
 
 because $[Z,[Z,X]]=4X$ and all cross-site commutators vanish. Repeating this step multiplies the coefficient at site $i$ by $4w_i^2$, proving (16).
@@ -178,7 +178,7 @@ An operator commuting with $S_x$ and $S_z$ also commutes with every nested commu
 
 $$
 V_{ki}=w_i(w_i^2)^k.
-\tag{18}
+\qquad\text{(18)}
 $$
 
 Its determinant is, up to the chosen column ordering,
@@ -187,7 +187,7 @@ $$
 \det V
 =\left(\prod_{i=1}^dw_i\right)
 \prod_{1\leq i<j\leq d}(w_j^2-w_i^2),
-\tag{19}
+\qquad\text{(19)}
 $$
 
 which is nonzero by (7). Linear combinations of the nested commutators therefore isolate each $X_i$. Equation (15) implies
@@ -195,14 +195,14 @@ which is nonzero by (7). Linear combinations of the nested commutators therefore
 $$
 [Q_A,X_i]=0
 \qquad(i\in N_A(b)).
-\tag{20}
+\qquad\text{(20)}
 $$
 
 For such a site,
 
 $$
 [X_i,S_z]=-2i w_iY_i.
-\tag{21}
+\qquad\text{(21)}
 $$
 
 The coefficient is nonzero. Equations (15), (20), and the Jacobi identity give $[Q_A,Y_i]=0$. Commutation with $[X_i,Y_i]=2iZ_i$ then gives $[Q_A,Z_i]=0$ as well.
@@ -211,7 +211,7 @@ We have proved that $Q_A$ commutes with the full one-qubit operator algebra on e
 
 $$
 \partial_B A=\{i\in A:N(i)\cap B\neq\varnothing\},
-\tag{22}
+\qquad\text{(22)}
 $$
 
 then there is an operator $Q_{A\setminus\partial_B A}$ such that
@@ -219,7 +219,7 @@ then there is an operator $Q_{A\setminus\partial_B A}$ such that
 $$
 Q_A
 =I_{\partial_B A}\otimes Q_{A\setminus\partial_B A},
-\tag{23}
+\qquad\text{(23)}
 $$
 
 with the tensor factors placed in their original site order. Equation (23) follows directly from the commutant of a full one-site matrix algebra, applied to each boundary site.
@@ -231,7 +231,7 @@ The boundary argument can be repeated without changing the Hamiltonian. Set $A_0
 $$
 A_{s+1}
 =A_s\setminus\partial_{V\setminus A_s}A_s
-\tag{24}
+\qquad\text{(24)}
 $$
 
 and forces identity on the newly removed sites.
@@ -246,14 +246,14 @@ The argument works for arbitrary operators $Q_A$. Equivalently, it suffices to p
 
 The construction proves that the local commutants can be scalar within the restricted Hamiltonian family (3). The next step shows that failure of this property occupies a proper algebraic subset of that family.
 
-Fix a nonempty proper $A$. Let $\operatorname{Herm}_0(\mathcal H_A)$ denote the real vector space of traceless Hermitian operators on $A$, of dimension $4^{|A|}-1$. Define the real linear map
+Fix a nonempty proper $A$. Let $\mathrm{Herm}_0(\mathcal H_A)$ denote the real vector space of traceless Hermitian operators on $A$, of dimension $4^{|A|}-1$. Define the real linear map
 
 $$
-K_A(\theta):\operatorname{Herm}_0(\mathcal H_A)
-\longrightarrow\operatorname{Herm}(\mathcal H_V),
+K_A(\theta):\mathrm{Herm}_0(\mathcal H_A)
+\longrightarrow\mathrm{Herm}(\mathcal H_V),
 \qquad
 K_A(\theta)(Q_A)=i[H(\theta),Q_A\otimes I_{A^c}].
-\tag{25}
+\qquad\text{(25)}
 $$
 
 Choose fixed orthonormal Hermitian Pauli bases in its domain and codomain. The matrix entries of $K_A(\theta)$ are real and linear in $\theta$. The local commutant is scalar exactly when $K_A(\theta)$ is injective: subtracting the trace removes the scalar part of any Hermitian commuting operator.
@@ -263,7 +263,7 @@ Define
 $$
 p_A(\theta)
 =\det\left(K_A(\theta)^{\mathsf T}K_A(\theta)\right).
-\tag{26}
+\qquad\text{(26)}
 $$
 
 This is a real polynomial, is nonnegative, and is positive precisely when $K_A(\theta)$ is injective. The particular parameters $\theta_*$ giving (8) satisfy $p_A(\theta_*)>0$ for every proper nonempty $A$, by Sections 3–4. Therefore none of these polynomials vanishes identically.
@@ -273,7 +273,7 @@ There are only finitely many proper subsets at fixed graph size. Set
 $$
 p_G(\theta)
 =\prod_{\varnothing\neq A\subsetneq V}p_A(\theta).
-\tag{27}
+\qquad\text{(27)}
 $$
 
 The same construction witnesses $p_G(\theta_*)>0$. Consequently $p_G$ is a nonzero polynomial, and
@@ -283,7 +283,7 @@ p_G(\theta)\neq0
 \quad\Longleftrightarrow\quad
 \mathfrak C_A(H(\theta))=\mathbb C I_A
 \text{ for every proper nonempty }A.
-\tag{28}
+\qquad\text{(28)}
 $$
 
 The zero set of a nonzero real polynomial has Lebesgue measure zero and empty interior. It is closed, so its complement is open and dense. This proves the parameter-space claim in Theorem 3.

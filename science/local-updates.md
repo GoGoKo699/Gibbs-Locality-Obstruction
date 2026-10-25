@@ -36,7 +36,7 @@ An operation implemented with independent ancillas, measurement, internal classi
 For any faithful target state $`\rho_\beta`$, the global replacement channel
 
 $$
-\mathcal T_\beta(X)=\operatorname{Tr}(X)\rho_\beta
+\mathcal T_\beta(X)=\mathrm{Tr}(X)\rho_\beta
 $$
 
 is CPTP and fixes the target. If
@@ -51,14 +51,14 @@ $$
 Since $`\mathcal T_\beta^2=\mathcal T_\beta`$, the generator
 
 $$
-\mathcal L_{\mathrm{reset}}=\mathcal T_\beta-\operatorname{id}
+\mathcal L_{\mathrm{reset}}=\mathcal T_\beta-\mathrm{id}
 $$
 
 has the CPTP semigroup
 
 $$
 e^{t\mathcal L_{\mathrm{reset}}}
-=e^{-t}\operatorname{id}+(1-e^{-t})\mathcal T_\beta.
+=e^{-t}\mathrm{id}+(1-e^{-t})\mathcal T_\beta.
 $$
 
 Its unique stationary density matrix is $`\rho_\beta`$. The same Kraus operators give its GKSL form directly, because their squared sum is the identity.
@@ -90,7 +90,7 @@ Likewise, the present theorem does not decide whether a genuinely dissipative lo
 
 A term can be centered near one vertex and have small operator tails reaching distant vertices while still having full support. The theorem allows that behavior. The exact Gibbs constructions discussed in [Related work](../references/related-work.md) use quasi-local physical generators, and their nonzero tails are compatible with the full-support necessity.
 
-Strict support of a system channel is also different from locality of its microscopic coupling to a bath. Evolution under an interacting system Hamiltonian can spread the action of a locally coupled bath. The resulting system channel need not be of the form $`\mathcal E_A\otimes\operatorname{id}_{A^c}`$.
+Strict support of a system channel is also different from locality of its microscopic coupling to a bath. Evolution under an interacting system Hamiltonian can spread the action of a locally coupled bath. The resulting system channel need not be of the form $`\mathcal E_A\otimes\mathrm{id}_{A^c}`$.
 
 Similarly, a circuit of local gates can implement a global channel. Requiring every gate to preserve the target separately is an additional condition, absent from a general preparation circuit.
 
@@ -99,14 +99,14 @@ Similarly, a circuit of local gates can implement a global channel. Requiring ev
 There is no temperature-independent disturbance floor in the theorem. Let $`\mathcal D_A`$ be a nonidentity unital local channel, for example dephasing one spin, and write $`D=2^n`$. At infinite temperature,
 
 $$
-(\mathcal D_A\otimes\operatorname{id})(I/D)=I/D.
+(\mathcal D_A\otimes\mathrm{id})(I/D)=I/D.
 $$
 
 For finite $`\beta`$, trace-norm contraction on Hermitian operators and the triangle inequality give
 
 $$
 \begin{aligned}
-\|(\mathcal D_A\otimes\operatorname{id})(\rho_\beta)-\rho_\beta\|_1
+\|(\mathcal D_A\otimes\mathrm{id})(\rho_\beta)-\rho_\beta\|_1
 &\leq
 2\|\rho_\beta-I/D\|_1 .
 \end{aligned}

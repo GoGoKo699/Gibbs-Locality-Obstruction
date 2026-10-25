@@ -5,11 +5,11 @@
 For generic two-body qubit Hamiltonians on any fixed finite connected graph, the answer is **only if the operation is the identity**. This holds on every proper subsystem, including disconnected subsets and regions containing all but one site, at every finite nonzero inverse temperature.
 
 $$
-(\mathcal E_A\otimes\operatorname{id}_{A^c})(\rho_\beta)=\rho_\beta
+(\mathcal E_A\otimes\mathrm{id}_{A^c})(\rho_\beta)=\rho_\beta
 \quad\Longrightarrow\quad
-\mathcal E_A=\operatorname{id}_A,
+\mathcal E_A=\mathrm{id}_A,
 \qquad
-\rho_\beta=\frac{e^{-\beta H}}{\operatorname{Tr}(e^{-\beta H})}.
+\rho_\beta=\frac{e^{-\beta H}}{\mathrm{Tr}(e^{-\beta H})}.
 $$
 
 Here “generic” means an open dense set of full measure in the real coefficient space of all allowed one-site and edge two-site interactions. The exceptional Hamiltonians form a proper algebraic set. The same generic Hamiltonian satisfies the conclusion for all finite nonzero inverse temperatures.
@@ -40,6 +40,12 @@ Start with the [question, model, and exact statements](science/model.md), then f
 | Exact finite checks and their interpretation | [Verification](verification/README.md) |
 
 The [LLM reading guide](llms.txt) maps scientific questions to the authoritative files.
+
+## Learn the argument
+
+The educational route uses **John Watrous, *The Theory of Quantum Information* (2018)** as its single textbook anchor. The [Watrous bridge](learning/WATROUS_BRIDGE.md) points to the relevant sections, translates the notation, and works through examples connecting channel theory to exact Gibbs preservation. It identifies the additional research ingredients and the graph argument supplied by this project.
+
+The [thirty-milestone map](learning/MILESTONES.md) organizes the route into 12 background and preliminaries milestones, followed by 18 narrative and innovation milestones. Each milestone states a central question, an understanding target, its dependencies, a conceptual connection, and source pointers. Begin with the bridge's [reading route](learning/WATROUS_BRIDGE.md#source-and-reading-route), then follow the map alongside the canonical science pages.
 
 ## Reproduce the finite checks
 

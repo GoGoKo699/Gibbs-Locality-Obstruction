@@ -24,7 +24,7 @@ $$
 The matrix has $4^n$ rows and $4^{|A|}-1$ columns. Its coefficients are rational for all Hamiltonians in this suite. `SymPy DomainMatrix.rref`, explicitly over the field `QQ`, gives the rank. The full local commutant has dimension
 
 $$
-1+\bigl(4^{|A|}-1-\operatorname{rank}K_A(H)\bigr).
+1+\bigl(4^{|A|}-1-\mathrm{rank}K_A(H)\bigr).
 $$
 
 The added one is the identity, which is excluded from the input basis. Site labels start at zero, with site 0 the leftmost tensor factor. The result file lists every Hamiltonian as a Pauli coefficient dictionary.

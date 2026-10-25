@@ -25,24 +25,24 @@ An additive scalar has been omitted because it changes neither the Gibbs state n
 For finite inverse temperature $`0<\beta<\infty`$, define
 
 $$
-\rho_\beta(H)=\frac{e^{-\beta H}}{\operatorname{Tr}(e^{-\beta H})}.
+\rho_\beta(H)=\frac{e^{-\beta H}}{\mathrm{Tr}(e^{-\beta H})}.
 $$
 
 This state is faithful: all its eigenvalues are positive. The algebraic statements also hold at finite negative $`\beta`$, but ordinary positive-temperature equilibrium is the physical setting used here. Infinite temperature, $`\beta=0`$, and the zero-temperature limit are separate cases.
 
 ## Supported operators, channels, and generators
 
-An observable supported on $`A\subseteq V`$ has the form $`Q_A\otimes I_{A^c}`$. A channel supported on $`A`$ has the form $`\mathcal E_A\otimes\operatorname{id}_{A^c}`$, where $`\mathcal E_A`$ is completely positive and trace preserving (CPTP). The support can be disconnected and can contain $`n-1`$ sites.
+An observable supported on $`A\subseteq V`$ has the form $`Q_A\otimes I_{A^c}`$. A channel supported on $`A`$ has the form $`\mathcal E_A\otimes\mathrm{id}_{A^c}`$, where $`\mathcal E_A`$ is completely positive and trace preserving (CPTP). The support can be disconnected and can contain $`n-1`$ sites.
 
 Exact Gibbs preservation means
 
 $$
-(\mathcal E_A\otimes\operatorname{id}_{A^c})(\rho_\beta)=\rho_\beta.
+(\mathcal E_A\otimes\mathrm{id}_{A^c})(\rho_\beta)=\rho_\beta.
 $$
 
 This is equality of the global state. Equality only of the marginal on $`A`$ does not satisfy the condition.
 
-A local Lindblad generator is $`\mathcal L_A=\ell_A\otimes\operatorname{id}_{A^c}`$, with
+A local Lindblad generator is $`\mathcal L_A=\ell_A\otimes\mathrm{id}_{A^c}`$, with
 
 $$
 \ell_A(X)=-i[K_A,X]
@@ -68,9 +68,9 @@ The individual physicality and stationarity requirements are part of the model. 
 **Generic Gibbs rigidity.** For every graph above, there is a nonzero real polynomial $`F_G(h,J)`$ such that, whenever $`F_G(h,J)\neq0`$,
 
 $$
-(\mathcal E_A\otimes\operatorname{id}_{A^c})(\rho_\beta)=\rho_\beta
+(\mathcal E_A\otimes\mathrm{id}_{A^c})(\rho_\beta)=\rho_\beta
 \quad\Longrightarrow\quad
-\mathcal E_A=\operatorname{id}_A
+\mathcal E_A=\mathrm{id}_A
 $$
 
 for **every** nonempty proper subset $`A\subsetneq V`$, **every** CPTP map $`\mathcal E_A`$, and **every** finite $`\beta\neq0`$, for the same Hamiltonian.

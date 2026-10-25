@@ -67,7 +67,7 @@ The [exact verification suite](../verification/README.md) independently checks t
 The interval result cannot be upgraded to every disconnected support for all uniform chains. On a homogeneous five-spin open chain, spatial reflection is
 
 $$
-R=\operatorname{SWAP}_{1,5}\operatorname{SWAP}_{2,4}\otimes I_3.
+R=\mathrm{SWAP}_{1,5}\mathrm{SWAP}_{2,4}\otimes I_3.
 $$
 
 It permutes the fields and bonds, so $`[R,H]=0`$. It is non-scalar and is supported on the proper subset $`\{1,2,4,5\}`$. Consequently the nonidentity channel
