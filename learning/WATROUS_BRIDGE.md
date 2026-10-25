@@ -37,7 +37,7 @@ The book and this project use different symbols for several identical objects. I
 
 The distinction between the two identities prevents a common support error. A supported observable is $`Q_A\otimes I_B`$, whereas a supported channel is $`\mathcal E_A\otimes\mathrm{id}_B`$. The latter acts on a global density operator; it is not obtained by multiplying that density operator by $`I_B`$ on just one side.
 
-“Faithful” means positive definite, $`\rho>0`$. Such a state has an inverse and a matrix logarithm on the whole space. A finite-dimensional Gibbs state at finite inverse temperature is faithful even when the Hamiltonian has degenerate energies.
+“Faithful” means positive definite, $`\rho\gt 0`$. Such a state has an inverse and a matrix logarithm on the whole space. A finite-dimensional Gibbs state at finite inverse temperature is faithful even when the Hamiltonian has degenerate energies.
 
 ## Local preservation
 
@@ -59,7 +59,7 @@ Let
 |\Phi^+\rangle=\frac{|00\rangle+|11\rangle}{\sqrt2},
 \qquad
 \rho_p=(1-p)\frac{I_4}{4}+p|\Phi^+\rangle\langle\Phi^+|,
-\qquad 0<p<1.
+\qquad 0\lt p\lt 1.
 ```
 
 Its eigenvalues are $`(1+3p)/4`$ and $`(1-p)/4`$ with multiplicity three, so it is faithful. Both one-qubit marginals are $`I_2/2`$. Dephase the first qubit in the $`Z`$ basis:
@@ -130,12 +130,12 @@ The needed extension is the faithful fixed-space structure explained in [the cha
 =\bigoplus_j\bigl[\mathcal B(\mathcal H_{L_j})\otimes\tau_{R_j}\bigr],
 ```
 
-where each $`\tau_{R_j}>0`$ is fixed. The $`R_j`$ factor stores a prescribed state, while arbitrary operators survive on $`L_j`$. The channel-criterion page attributes this structure to the established fixed-point literature, including [Johnson–Ticozzi–Viola](https://www.rintonpress.com/xxqic16/qic-16-78/0657-0699.pdf).
+where each $`\tau_{R_j}\gt 0`$ is fixed. The $`R_j`$ factor stores a prescribed state, while arbitrary operators survive on $`L_j`$. The channel-criterion page attributes this structure to the established fixed-point literature, including [Johnson–Ticozzi–Viola](https://www.rintonpress.com/xxqic16/qic-16-78/0657-0699.pdf).
 
 Apply this structure to the coefficients $`R_\mu`$ of a globally preserved state. There are three possibilities:
 
 - Several direct-sum blocks give a nonscalar block projector commuting with the state.
-- One block with $`\dim\mathcal H_R>1`$ gives a nonscalar operator commuting with $`\tau_R`$, and therefore with the state. If $`\tau_R`$ is scalar, any proper projector works.
+- One block with $`\dim\mathcal H_R\gt 1`$ gives a nonscalar operator commuting with $`\tau_R`$, and therefore with the state. If $`\tau_R`$ is scalar, any proper projector works.
 - One block with $`\dim\mathcal H_R=1`$ means the whole operator space is fixed, so the channel is the identity.
 
 Conversely, a nonscalar Hermitian $`Q_A`$ commuting with $`\rho_{AB}`$ yields a preserving pinching: if $`Q_A=\sum_jq_jP_j`$, then
@@ -163,7 +163,7 @@ For a Hamiltonian $`H=H^\dagger`$, define
 ```math
 \rho_\beta=\frac{e^{-\beta H}}{Z_\beta},
 \qquad Z_\beta=\mathrm{Tr}(e^{-\beta H}),
-\qquad 0<|\beta|<\infty.
+\qquad 0\lt |\beta|\lt \infty.
 ```
 
 Spectral calculus turns the state-preservation problem into a Hamiltonian problem. If $`Q_A\otimes I_B`$ commutes with $`H`$, it commutes with $`e^{-\beta H}`$ and hence with $`\rho_\beta`$. Conversely, commuting with the positive definite $`\rho_\beta`$ implies commuting with its logarithm, and
@@ -248,7 +248,7 @@ K_A(\theta):Q_A\longmapsto i[H(\theta),Q_A\otimes I]
 on traceless Hermitian operators in fixed Pauli bases. Its entries are linear in the Hamiltonian coefficients. The local commutant is scalar exactly when this map is injective, equivalently when
 
 ```math
-p_A(\theta)=\det\bigl(K_A(\theta)^{\mathsf T}K_A(\theta)\bigr)>0.
+p_A(\theta)=\det\bigl(K_A(\theta)^{\mathsf T}K_A(\theta)\bigr)\gt 0.
 ```
 
 The explicit $`H_*`$ makes this polynomial nonzero for every proper $`A`$. At fixed graph size there are finitely many such subsets, so their product is a nonzero polynomial. Its zero set has measure zero and empty interior; the complement is open. This proves the advertised open, dense, full-measure conclusion in the specified coefficient space.

@@ -74,7 +74,7 @@ The passage from scalar local commutants to channel rigidity uses the known char
 
 ```math
 [Q_A\otimes I,e^{-\beta H}]=0\quad\Longleftrightarrow\quad[Q_A\otimes I,H]=0
-\qquad(0<|\beta|<\infty).
+\qquad(0\lt |\beta|\lt \infty).
 ```
 
 The channel characterization is due to Lie and Ng, *Physical Review A* **108**, 012417 (2023), Theorem 3: [arXiv:2303.02376](https://arxiv.org/abs/2303.02376). The suite does not independently prove that characterization. Its Lindbladian consequence concerns individually valid GKSL terms that each annihilate the Gibbs state. It gives no quantitative disturbance bound, approximate-sampling lower bound, or claim about cancellations between local terms.

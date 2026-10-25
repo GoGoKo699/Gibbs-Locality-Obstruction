@@ -27,7 +27,7 @@ with Hamiltonians
 ```math
 H(\theta)
 =\sum_{i\in V}\sum_{a=1}^3 h_{i,a}\sigma_i^a
-+\sum_{\substack{\{i,j\}\in E\\i<j}}
++\sum_{\substack{\{i,j\}\in E\\i\lt j}}
 \sum_{a,b=1}^3J_{ij}^{ab}\sigma_i^a\sigma_j^b.
 \qquad\text{(3)}
 ```
@@ -155,7 +155,7 @@ are linearly independent. Comparing their coefficients in (11) gives
 
 This comparison does not require $`A`$ or $`B`$ to be connected.
 
-Now fix an exterior vertex with $`d=|N_A(b)|>0`$, abbreviate $`S_x=S_x^{(b)}`$, $`S_z=S_z^{(b)}`$, and write its crossing weights as $`w_1,\ldots,w_d`$. With $`\mathrm{ad}_S(T)=[S,T]`$, the Pauli relations and commutativity of operators on distinct sites imply
+Now fix an exterior vertex with $`d=|N_A(b)|\gt 0`$, abbreviate $`S_x=S_x^{(b)}`$, $`S_z=S_z^{(b)}`$, and write its crossing weights as $`w_1,\ldots,w_d`$. With $`\mathrm{ad}_S(T)=[S,T]`$, the Pauli relations and commutativity of operators on distinct sites imply
 
 ```math
 \mathrm{ad}_{S_z}^{2k}(S_x)
@@ -186,7 +186,7 @@ Its determinant is, up to the chosen column ordering,
 ```math
 \det V
 =\left(\prod_{i=1}^dw_i\right)
-\prod_{1\leq i<j\leq d}(w_j^2-w_i^2),
+\prod_{1\leq i\lt j\leq d}(w_j^2-w_i^2),
 \qquad\text{(19)}
 ```
 
@@ -266,7 +266,7 @@ p_A(\theta)
 \qquad\text{(26)}
 ```
 
-This is a real polynomial, is nonnegative, and is positive precisely when $`K_A(\theta)`$ is injective. The particular parameters $`\theta_*`$ giving (8) satisfy $`p_A(\theta_*)>0`$ for every proper nonempty $`A`$, by Sections 3–4. Therefore none of these polynomials vanishes identically.
+This is a real polynomial, is nonnegative, and is positive precisely when $`K_A(\theta)`$ is injective. The particular parameters $`\theta_*`$ giving (8) satisfy $`p_A(\theta_*)\gt 0`$ for every proper nonempty $`A`$, by Sections 3–4. Therefore none of these polynomials vanishes identically.
 
 There are only finitely many proper subsets at fixed graph size. Set
 
@@ -276,7 +276,7 @@ p_G(\theta)
 \qquad\text{(27)}
 ```
 
-The same construction witnesses $`p_G(\theta_*)>0`$. Consequently $`p_G`$ is a nonzero polynomial, and
+The same construction witnesses $`p_G(\theta_*)\gt 0`$. Consequently $`p_G`$ is a nonzero polynomial, and
 
 ```math
 p_G(\theta)\neq0

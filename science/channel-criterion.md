@@ -14,7 +14,7 @@ Let the finite-dimensional Hilbert space be
 \mathcal H=\mathcal H_A\otimes\mathcal H_B,
 ```
 
-and let $`\rho_{AB}>0`$ be a density operator. The inequality means that the state is positive definite, also called faithful. Its reduced state $`\rho_A=\mathrm{Tr}_B\rho_{AB}`$ is then positive definite as well.
+and let $`\rho_{AB}\gt 0`$ be a density operator. The inequality means that the state is positive definite, also called faithful. Its reduced state $`\rho_A=\mathrm{Tr}_B\rho_{AB}`$ is then positive definite as well.
 
 A local channel is a completely positive, trace-preserving linear map $`\mathcal E_A`$ from operators on $`\mathcal H_A`$ to operators on the same space. Its action on the joint state is $`\mathcal E_A\otimes\mathrm{id}_B`$. The local-preservation condition is
 
@@ -95,7 +95,7 @@ in which
 \qquad\text{(7)}
 ```
 
-Each $`\tau_{R_j}>0`$ is a fixed density operator. The same $`\tau_{R_j}`$ occurs for every operator in the corresponding block of the fixed space. The faithful fixed state excludes a transient subspace outside these blocks.
+Each $`\tau_{R_j}\gt 0`$ is a fixed density operator. The same $`\tau_{R_j}`$ occurs for every operator in the corresponding block of the fixed space. The faithful fixed state excludes a transient subspace outside these blocks.
 
 Equation (7) is an inherited structural result. It is stated in [Johnson, Ticozzi, and Viola, Theorem 1 and Eq. (14)](https://arxiv.org/pdf/1506.07756), and the channel-sensitivity application is developed by Lie and Ng. It describes the fixed **linear space**, including nonpositive fixed operators, which is why it can be applied to the coefficient operators of a correlated state.
 
@@ -139,7 +139,7 @@ Linear independence of the $`F_\mu`$ and (1) imply $`\mathcal E_A(X_\mu)=X_\mu`$
 
 with the tensor factors ordered in the indicated block. The positive operators $`\omega_{L_jB}`$ may be unnormalized; their traces contain the block probabilities.
 
-If there is more than one block, a projector onto one block of (6) is a nonscalar local Hermitian operator commuting with (11). If there is exactly one block and $`\dim\mathcal H_R>1`$, choose a nonscalar Hermitian operator $`Q_R`$ commuting with $`\tau_R`$. Such an operator always exists, including when $`\tau_R`$ is proportional to the identity. Then $`I_L\otimes Q_R`$ is a nonscalar element of $`\mathfrak C_A(\rho)`$.
+If there is more than one block, a projector onto one block of (6) is a nonscalar local Hermitian operator commuting with (11). If there is exactly one block and $`\dim\mathcal H_R\gt 1`$, choose a nonscalar Hermitian operator $`Q_R`$ commuting with $`\tau_R`$. Such an operator always exists, including when $`\tau_R`$ is proportional to the identity. Then $`I_L\otimes Q_R`$ is a nonscalar element of $`\mathfrak C_A(\rho)`$.
 
 The remaining possibility is one block with $`\dim\mathcal H_R=1`$. In that case (7) equals the entire operator algebra on $`A`$. The channel fixes every operator and hence is the identity, contrary to the assumption. We have therefore shown that any nonidentity local preserving channel produces a nonscalar local commutant.
 
@@ -155,7 +155,7 @@ Let $`H=H^\dagger`$ be a finite-dimensional Hamiltonian and let
 \qquad
 Z_\beta(H)=\mathrm{Tr}e^{-\beta H},
 \qquad
-0<|\beta|<\infty.
+0\lt |\beta|\lt \infty.
 \qquad\text{(12)}
 ```
 
@@ -199,7 +199,7 @@ and Theorem 1 proves (14). $`\square`$
 
 The criterion is independent of temperature throughout the finite nonzero-temperature domain. Once $`\mathfrak C_A(H)`$ is scalar, the conclusion holds for every finite $`\beta\neq0`$ for that same Hamiltonian. There is no interchange of “almost every Hamiltonian” and “every temperature” in this step.
 
-At $`\beta=0`$, the Gibbs state is maximally mixed. Every unital local channel preserves it, and local rigidity fails when $`\dim\mathcal H_A>1`$. The zero-temperature limit can produce a nonfaithful state; neither the logarithm argument nor the faithful-state proof above asserts that the limiting ground-state projector has the same rigidity property.
+At $`\beta=0`$, the Gibbs state is maximally mixed. Every unital local channel preserves it, and local rigidity fails when $`\dim\mathcal H_A\gt 1`$. The zero-temperature limit can produce a nonfaithful state; neither the logarithm argument nor the faithful-state proof above asserts that the limiting ground-state projector has the same rigidity property.
 
 ## 4. What is transferred to the many-body theorem
 

@@ -22,7 +22,7 @@ J_{ij}^{ab}\,\sigma_i^a\sigma_j^b .
 
 An additive scalar has been omitted because it changes neither the Gibbs state nor commutators. The coefficient space is $`\mathbb R^{3n+9|E|}`$. No translation invariance, disorder distribution, spectral nondegeneracy, integrability, or mixing hypothesis is imposed.
 
-For finite inverse temperature $`0<\beta<\infty`$, define
+For finite inverse temperature $`0\lt \beta\lt \infty`$, define
 
 ```math
 \rho_\beta(H)=\frac{e^{-\beta H}}{\mathrm{Tr}(e^{-\beta H})}.

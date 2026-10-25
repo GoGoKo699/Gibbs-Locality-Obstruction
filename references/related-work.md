@@ -24,7 +24,7 @@ For a finite-dimensional Gibbs state, the elementary identity
 \log\rho_\beta=-\beta H-\log Z_\beta\,I
 ```
 
-equates its local commutant with that of $`H`$ whenever $`0<|\beta|<\infty`$. Combining this observation with the established channel criterion gives the dynamical consequence of the Hamiltonian theorem: every exactly Gibbs-preserving CPTP map on a proper subsystem is the identity. The restriction to Hamiltonians with prescribed interaction locality is substantive. A generic-state assertion by itself does not prove a generic assertion inside this much smaller Gibbs family.
+equates its local commutant with that of $`H`$ whenever $`0\lt |\beta|\lt \infty`$. Combining this observation with the established channel criterion gives the dynamical consequence of the Hamiltonian theorem: every exactly Gibbs-preserving CPTP map on a proper subsystem is the identity. The restriction to Hamiltonians with prescribed interaction locality is substantive. A generic-state assertion by itself does not prove a generic assertion inside this much smaller Gibbs family.
 
 ## Comparison at a glance
 
@@ -66,7 +66,7 @@ The [published article](https://www.rintonpress.com/xxqic16/qic-16-78/0657-0699.
 
 ```math
 H=-\sum_{j=1}^{n-1}Z_jZ_{j+1}-g\sum_{j=1}^{n}X_j,
-\qquad n\geq4,\quad g>0,
+\qquad n\geq4,\quad g\gt 0,
 ```
 
 and finite-temperature Gibbs states defined by its Eq. (43). It reports numerical FFQLS for four spins with three-body neighborhoods. The section does not specify numerical values of $`g`$ or $`\beta`$. Its definitions resolve the relevant interpretation: neighborhoods are arbitrary subsets (§2.3); Definition 2 uses neighborhood generators; Definitions 4–5 require neighborhood-wise invariance and global stabilization. These are exact conditions, with no restriction to contiguous neighborhoods.
