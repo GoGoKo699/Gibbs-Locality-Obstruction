@@ -1,0 +1,501 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "exceptions": [
+    {
+      "conserved_observable": {
+        "commutator_is_exactly_zero": true,
+        "nonscalar_Hermitian": true,
+        "observable": "SWAP(1,2)",
+        "support_zero_based": [
+          1,
+          2
+        ]
+      },
+      "hamiltonian_pauli_coefficients": {
+        "XIIX": "1",
+        "XIXI": "1",
+        "XXII": "1",
+        "ZIIZ": "1",
+        "ZIZI": "1",
+        "ZZII": "1"
+      },
+      "n": 4,
+      "name": "equal_weight_star_boundary_separation_exception",
+      "rank_check": {
+        "commutant_dimension_including_identity": 5,
+        "expected_rank": 59,
+        "matrix_nonzero_entries": 192,
+        "matrix_shape": [
+          256,
+          63
+        ],
+        "passed": true,
+        "rank_over_Q": 59,
+        "support_zero_based": [
+          1,
+          2,
+          3
+        ],
+        "traceless_kernel_dimension": 4
+      }
+    },
+    {
+      "conserved_observable": {
+        "commutator_is_exactly_zero": true,
+        "nonscalar_Hermitian": true,
+        "observable": "Z_0",
+        "support_zero_based": [
+          0
+        ]
+      },
+      "hamiltonian_pauli_coefficients": {
+        "IIZZ": "-1",
+        "IZZI": "-1",
+        "ZZII": "-1"
+      },
+      "n": 4,
+      "name": "commuting_ising_exception",
+      "rank_check": {
+        "commutant_dimension_including_identity": 2,
+        "expected_rank": 2,
+        "matrix_nonzero_entries": 2,
+        "matrix_shape": [
+          256,
+          3
+        ],
+        "passed": true,
+        "rank_over_Q": 2,
+        "support_zero_based": [
+          0
+        ],
+        "traceless_kernel_dimension": 1
+      }
+    },
+    {
+      "conserved_observable": {
+        "commutator_is_exactly_zero": true,
+        "nonscalar_Hermitian": true,
+        "observable": "reflection = SWAP(0,2)",
+        "support_zero_based": [
+          0,
+          2
+        ]
+      },
+      "hamiltonian_pauli_coefficients": {
+        "IIX": "-1",
+        "IXI": "-1",
+        "IZZ": "-1",
+        "XII": "-1",
+        "ZZI": "-1"
+      },
+      "n": 3,
+      "name": "odd_homogeneous_tfim_reflection_exception",
+      "rank_check": {
+        "commutant_dimension_including_identity": 2,
+        "expected_rank": 14,
+        "matrix_nonzero_entries": 32,
+        "matrix_shape": [
+          64,
+          15
+        ],
+        "passed": true,
+        "rank_over_Q": 14,
+        "support_zero_based": [
+          0,
+          2
+        ],
+        "traceless_kernel_dimension": 1
+      }
+    },
+    {
+      "CPTP_reason": "equal mixture of two unitary conjugations",
+      "beta": "0",
+      "changes_probe_state_(I+X_0)_over_16": true,
+      "channel": "E(M) = (M + Z_0 M Z_0)/2",
+      "fixes_I_over_16_exactly": true,
+      "maps_X_0_to_zero_exactly": true,
+      "n": 4,
+      "name": "beta_zero_channel_exception",
+      "support_zero_based": [
+        0
+      ]
+    }
+  ],
+  "independent_dense_crosscheck": {
+    "all_exactly_equal": true,
+    "columns_checked": 15,
+    "n": 3,
+    "support_zero_based": [
+      0,
+      2
+    ]
+  },
+  "method": {
+    "basis": "unnormalized Pauli words; scalar identity excluded from domain",
+    "field": "QQ (exact rationals)",
+    "floating_point_rank_tolerance": null,
+    "linear_map": "Q_A -> [Q_A tensor I, H]/(2i)",
+    "rank_algorithm": "SymPy DomainMatrix.rref after explicit conversion to QQ",
+    "tensor_order": "site 0 is the leftmost tensor factor"
+  },
+  "positive_cases": [
+    {
+      "hamiltonian_pauli_coefficients": {
+        "IIXX": "3/2",
+        "IIZZ": "3/2",
+        "IXXI": "5/4",
+        "IZZI": "5/4",
+        "XXII": "1",
+        "ZZII": "1"
+      },
+      "maximal_proper_support_checks": [
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 192,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 0,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            1,
+            2,
+            3
+          ],
+          "traceless_kernel_dimension": 0
+        },
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 192,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 1,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            0,
+            2,
+            3
+          ],
+          "traceless_kernel_dimension": 0
+        },
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 192,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 2,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            0,
+            1,
+            3
+          ],
+          "traceless_kernel_dimension": 0
+        },
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 192,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 3,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            0,
+            1,
+            2
+          ],
+          "traceless_kernel_dimension": 0
+        }
+      ],
+      "n": 4,
+      "name": "weighted_path_4"
+    },
+    {
+      "hamiltonian_pauli_coefficients": {
+        "XIIX": "3/2",
+        "XIXI": "5/4",
+        "XXII": "1",
+        "ZIIZ": "3/2",
+        "ZIZI": "5/4",
+        "ZZII": "1"
+      },
+      "maximal_proper_support_checks": [
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 192,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 0,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            1,
+            2,
+            3
+          ],
+          "traceless_kernel_dimension": 0
+        },
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 192,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 1,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            0,
+            2,
+            3
+          ],
+          "traceless_kernel_dimension": 0
+        },
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 192,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 2,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            0,
+            1,
+            3
+          ],
+          "traceless_kernel_dimension": 0
+        },
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 192,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 3,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            0,
+            1,
+            2
+          ],
+          "traceless_kernel_dimension": 0
+        }
+      ],
+      "n": 4,
+      "name": "weighted_star_4"
+    },
+    {
+      "hamiltonian_pauli_coefficients": {
+        "IIXX": "3/2",
+        "IIZZ": "3/2",
+        "IXXI": "5/4",
+        "IZZI": "5/4",
+        "XIIX": "7/4",
+        "XXII": "1",
+        "ZIIZ": "7/4",
+        "ZZII": "1"
+      },
+      "maximal_proper_support_checks": [
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 256,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 0,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            1,
+            2,
+            3
+          ],
+          "traceless_kernel_dimension": 0
+        },
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 256,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 1,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            0,
+            2,
+            3
+          ],
+          "traceless_kernel_dimension": 0
+        },
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 256,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 2,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            0,
+            1,
+            3
+          ],
+          "traceless_kernel_dimension": 0
+        },
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 256,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 3,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            0,
+            1,
+            2
+          ],
+          "traceless_kernel_dimension": 0
+        }
+      ],
+      "n": 4,
+      "name": "weighted_cycle_4"
+    },
+    {
+      "hamiltonian_pauli_coefficients": {
+        "IIIX": "-1",
+        "IIXI": "-1",
+        "IIZZ": "-1",
+        "IXII": "-1",
+        "IZZI": "-1",
+        "XIII": "-1",
+        "ZZII": "-1"
+      },
+      "maximal_proper_support_checks": [
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 192,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 0,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            1,
+            2,
+            3
+          ],
+          "traceless_kernel_dimension": 0
+        },
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 192,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 1,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            0,
+            2,
+            3
+          ],
+          "traceless_kernel_dimension": 0
+        },
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 192,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 2,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            0,
+            1,
+            3
+          ],
+          "traceless_kernel_dimension": 0
+        },
+        {
+          "commutant_dimension_including_identity": 1,
+          "expected_rank": 63,
+          "matrix_nonzero_entries": 192,
+          "matrix_shape": [
+            256,
+            63
+          ],
+          "omitted_vertex_zero_based": 3,
+          "passed": true,
+          "rank_over_Q": 63,
+          "support_zero_based": [
+            0,
+            1,
+            2
+          ],
+          "traceless_kernel_dimension": 0
+        }
+      ],
+      "n": 4,
+      "name": "homogeneous_tfim_4"
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "all_checks_passed": true,
+    "exception_rank_checks": 3,
+    "independent_dense_columns_checked": 15,
+    "positive_support_rank_checks": 16,
+    "scope": "finite exact checks; the arbitrary-graph and genericity claims require proof"
+  }
+}
