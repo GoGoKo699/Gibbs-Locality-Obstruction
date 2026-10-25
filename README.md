@@ -4,13 +4,13 @@
 
 For generic two-body qubit Hamiltonians on any fixed finite connected graph, the answer is **only if the operation is the identity**. This holds on every proper subsystem, including disconnected subsets and regions containing all but one site, at every finite nonzero inverse temperature.
 
-$$
+```math
 (\mathcal E_A\otimes\mathrm{id}_{A^c})(\rho_\beta)=\rho_\beta
 \quad\Longrightarrow\quad
 \mathcal E_A=\mathrm{id}_A,
 \qquad
 \rho_\beta=\frac{e^{-\beta H}}{\mathrm{Tr}(e^{-\beta H})}.
-$$
+```
 
 Here “generic” means an open dense set of full measure in the real coefficient space of all allowed one-site and edge two-site interactions. The exceptional Hamiltonians form a proper algebraic set. The same generic Hamiltonian satisfies the conclusion for all finite nonzero inverse temperatures.
 
