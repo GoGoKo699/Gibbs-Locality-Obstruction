@@ -1,0 +1,37 @@
+# Gibbs Locality Obstruction
+
+Scientific question: when can a physical channel acting on a proper subsystem leave the entire Gibbs state of an interacting quantum Hamiltonian unchanged?
+
+## Authoritative scientific route
+
+1. science/model.md — finite connected qubit graph, full one-site/edge interaction coefficient space, exact global preservation, physical local channels and GKSL generators, main theorem and quantifiers.
+2. science/channel-criterion.md — inherited Lie–Ng channel-sensitivity theorem, faithful fixed-space proof, and the logarithm equivalence between the Gibbs-state and Hamiltonian local commutants.
+3. science/hamiltonian-rigidity.md — explicit bounded-coupling weighted XX+ZZ witness; exterior Pauli coefficient comparison; Vandermonde isolation; repeated removal of boundary support; polynomial genericity.
+4. science/local-updates.md — termwise Gibbs-preserving Lindblad obstruction, tight full-support existence bound, global reset construction, cancellation example, and high-temperature approximate-preservation limit.
+5. science/examples.md — open Ising interval proof, all-proper-subsets four-spin proof, odd-chain reflection, repeated-weight star, classical heatbath update, disconnected graphs, and beta=0.
+6. references/related-work.md — precise inherited ingredients, current Gibbs-sampler comparisons, and the published four-spin stabilization discrepancy.
+7. references/references.bib — structured primary-source bibliography.
+8. verification/README.md — reproducibility commands and the finite checks' meaning.
+9. verification/verify.py and verification/results.json — exact implementation and recorded outputs.
+
+## Essential distinctions
+
+- The result is about preserving the entire Gibbs state, not merely the marginal on the updated region.
+- The known channel criterion is due to Lie and Ng. Do not attribute that state-level equivalence to this project.
+- The graph result is generic in a specified full coefficient space. Noncommutation alone is insufficient, and symmetry-restricted families require separate witnesses.
+- The same generic Hamiltonian is rigid on every proper subset at all finite nonzero inverse temperatures.
+- Every term in the dynamical corollary must itself be a physical GKSL generator and must individually annihilate the Gibbs state.
+- The theorem does not exclude cancellation among individually nonstationary local terms, arbitrary non-GKSL decompositions, approximate updates, or quasi-local tails.
+- A global replacement channel makes the spatial support bound attainable, but supplies no efficient preparation algorithm or free target-state access.
+- Exact finite ranks illustrate and audit the construction; they are not proofs of arbitrary-graph genericity.
+- The four-spin Ising comparison is established analytically for every nonzero homogeneous field and coupling. No numerical cause for the earlier published claim is established.
+
+## Reader routes
+
+For the physical story, read model.md, local-updates.md, and examples.md.
+For proof verification, read channel-criterion.md and hamiltonian-rigidity.md in full.
+For the four-spin comparison, read examples.md#four-spin-ising-chain alongside references/related-work.md.
+For reproduction, follow verification/README.md and distinguish the implementation checks from the analytical proof.
+
+README.md is the repository entrypoint. Each scientific result has one canonical proof home; cross-links connect the account.
+
